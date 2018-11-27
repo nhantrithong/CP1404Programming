@@ -1,0 +1,5 @@
+in_file =  open("numbers.txt","r")
+numberOne = int(in_file.readline())
+numberTwo = int(in_file.readline())
+print(numberOne + numberTwo)
+in_file.close()
