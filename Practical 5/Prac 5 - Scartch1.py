@@ -1,16 +1,20 @@
-#def main():
-    #counts = dict()
-    #text = input("Enter string:")
-    #divide = text.split()
-    #for words in divide:
-        #counts[words] = counts.get(words,0) + 1
-        #print("{}:{}".format(words, counts[words]))
-
-    #print(counts)
-
 def main():
-    list = []
     text = input("Enter string:")
-    list.append(text)
-    print(list)
+    print(word_count(text))
+
+def word_count(text):
+    counts = dict()
+    words = text.split()
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+
+    return counts
+
 main()
+
+
+
+
